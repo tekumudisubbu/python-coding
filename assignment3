@@ -1,0 +1,14 @@
+def duplicate(n):
+    List = []
+    for i in n:
+        if i not in List:
+            List.append(i)
+    return List
+
+
+m = int(input())
+n = list(map(int, input().split()))
+if n != duplicate(n):
+    print('Yes')
+else:
+    print("No")
